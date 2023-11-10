@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instituto I3P</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<img id="logo" src="logo.png" alt="i3p logo">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="home">
+			<h2>Bem-Vindo ao Instituto I3P - Sua Fonte Confiável para Pesquisa e Consultoria</h2>
+			<p>No Instituto de Pesquisa e Planejamento Público (I3P), reunimos uma equipe dedicada de pesquisadores e
+				cientistas, todos graduados pela renomada UNICAMP. Em parceria com equipes de marketing, empresas,
+				institutos,
+				prefeituras e assessores políticos, oferecemos serviços especializados de consultoria e pesquisa
+				política,
+				eleitoral e de mercado.
+			</p>
+		</section>
+
+		<section id="servicos">
+			<h2>Nossos Serviços de Consultoria</h2>
+			<div class="cards">
+				<div class="servico-card">
+					<h3>Pesquisas Políticas e Eleitorais</h3>
+					<p>Fornecemos insights valiosos para campanhas políticas, avaliando o posicionamento dos candidatos
+						e
+						estimando o apoio eleitoral.</p>
+				</div>
+				<div class="servico-card">
+					<h3>Pesquisas de Opinião e Mercado</h3>
+					<p>Analisamos percepções da população e fornecemos dados relevantes para estratégias de marketing e
+						desenvolvimento de produtos.</p>
+				</div>
+				<div class="servico-card">
+					<h3>Pesquisas Políticas e Eleitorais</h3>
+					<p>Fornecemos insights valiosos para campanhas políticas, avaliando o posicionamento dos candidatos
+						e
+						estimando o apoio eleitoral.</p>
+				</div>
+				<div class="servico-card">
+					<h3>Pesquisas de Opinião e Mercado</h3>
+					<p>Analisamos percepções da população e fornecemos dados relevantes para estratégias de marketing e
+						desenvolvimento de produtos.</p>
+				</div>
+				<!-- Adicione mais cards conforme necessário -->
+			</div>
+		</section>
+
+		<section id="sobre">
+			<h2>Sobre</h2>
+			<section id="contato">
+				<h2>Entre em Contato</h2>
+				<form id="form" action="https://formspree.io/f/xqkvjjpg" method="post">
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" required name="name"><br>
+
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" required name="email"><br>
+
+					<label for="mensagem">Mensagem:</label>
+					<textarea id="mensagem" required name="message"></textarea><br>
+
+					<button type="submit">Enviar</button>
+				</form>
+			</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
