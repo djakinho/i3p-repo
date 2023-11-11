@@ -1,44 +1,24 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   margin: 0;
   padding: 0;
 }
 
 header {
   background-color: rgb(9, 171, 171);
-  color: rgb(234, 210, 113);
-  padding: 1rem;
-  text-align: center;
 }
 
-nav ul {
-  list-style: none;
+main {
+  flex: 1;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-form label,
-form textarea,
-form input {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-form button {
-  background-color: #333;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-}
 
 /* Estilo padrão para o logotipo */
 #logo {
@@ -61,16 +41,101 @@ form button {
     height: auto;
   }
 }
-/* Sessão dos Cards */
-#servicos {
-  background-color: #f9f9f9;
-}
 
-.cards {
+/* CARD ELEMENTS ============================== */
+
+.cards-container {
+  max-width: 1110px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.servico-card {
-  background-color: #fff;
+.card {
+  width: 300px;
+  padding: 2rem 1rem;
+  border-radius: 2px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+card h3 {
+  margin-bottom: 1rem;
+}
+
+/* CTA SECTION ============================== */
+
+.cta-section {
+  background-color: #F9F9FA;
+  padding: 3rem 1rem;
+}
+
+.cta-card {
+  background-color: #FFFFFF;
+}
+
+.cta-btn {
+  background-color: #219EBC;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #40BEDD;
+}
+
+
+/* TEAM SECTION ============================== */
+
+.team-section {
+  padding: 3rem 1rem;
+}
+
+.team-card {
+  background-color: #354144;
+  color: #F9F9FA;
+}
+
+.team-card img {
+  /* fix: crop img before using it*/
+  max-width: 175px;
+  border-radius: 50%;
+  border: 2px solid #121617;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+}
+
+/* ======================================== */
+
+
+/* HEX CODES:
+
+Primary: #219EBC
+Light primary: #40BEDD
+White: #FFFFFF
+Light grey: #F9F9FA
+Dark grey: #354144
+Black: #121617
+
+*/
+
+/* https://formspree.io/f/xqkvjjpg */
+
+.contact-section {
+  padding: 3rem 1rem;
 }
