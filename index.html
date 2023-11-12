@@ -10,19 +10,21 @@
 
 <body>
 	<header>
-		<nav>
-			<img id="logo" src="logo.png" alt="i3p logo">
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#contato">Contato</a></li>
-			</ul>
-		</nav>
+		<section class="section-header" id="home">
+			<nav>
+				<img id="logo" src="logo.png" alt="i3p logo">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+		</section>
 	</header>
 
-	<section id="home">
-		<h2>Bem-Vindo ao Instituto I3P - Sua Fonte Confiável para Pesquisa e Consultoria</h2>
-		<p>No Instituto de Pesquisa e Planejamento Público (I3P), reunimos uma equipe dedicada de pesquisadores e
+	<section id="sobre">
+		<h2 style="font-size: 40px;">Bem-Vindo ao Instituto I3P - Sua Fonte Confiável para Pesquisa e Consultoria</h2>
+		<p style="font-size: large;">No Instituto de Pesquisa e Planejamento Público (I3P), reunimos uma equipe dedicada de pesquisadores e
 			cientistas, todos graduados pela renomada UNICAMP. Em parceria com equipes de marketing, empresas,
 			institutos,
 			prefeituras e assessores políticos, oferecemos serviços especializados de consultoria e pesquisa
@@ -36,22 +38,38 @@
 			<div class="cards-container">
 				<div class="card cta-card">
 					<h3>Pesquisas Políticas e Eleitorais</h3>
+					<br>
 					<p>Fornecemos insights valiosos para campanhas políticas, avaliando o posicionamento dos candidatos
 						e estimando o apoio eleitoral.</p>
 					<a href="#" class="cta-btn">Saiba mais</a>
 				</div>
 				<div class="card cta-card">
-					<h3>Pesquisas Políticas e Eleitorais</h3>
-					<p>Fornecemos insights valiosos para campanhas políticas, avaliando o posicionamento dos candidatos
-						e estimando o apoio eleitoral.</p>
+					<h3>Pesquisas de Opinião e Mercado</h3>
+					<br>
+					<p>Analisamos percepções da população e fornecemos dados relevantes para estratégias de marketing e
+						desenvolvimento de produtos.</p>
 					<a href="#" class="cta-btn">Saiba mais</a>
 				</div>
 				<div class="card cta-card">
-					<h3>Pesquisas Políticas e Eleitorais</h3>
-					<p>Fornecemos insights valiosos para campanhas políticas, avaliando o posicionamento dos candidatos
-						e estimando o apoio eleitoral.</p>
+					<h3>Pesquisas Socioeconômicas e Etnográficas</h3>
+					<p>Coletamos dados para compreender a realidade social e econômica de grupos sociais específicos,
+						conduzindo pesquisas etnográficas para
+						estudar culturas e comunidades.</p>
 					<a href="#" class="cta-btn">Saiba mais</a>
 				</div>
+				<div class="card cta-card">
+					<h3>Análises Especializadas</h3>
+					<p>Utilizamos técnicas avançadas, incluindo análise de preditores, grupos de controle, elasticidade de preços
+						e atributos pessoais, proporcionando insights detalhados sobre eleitores, consumidores e produtos.</p>
+					<a href="#" class="cta-btn">Saiba mais</a>
+				</div>
+				<!-- <div class="card cta-card">
+					<h3>Coleta de Dados Detalhada</h3>
+					<p>Independentemente do método - pesquisa de campo, telefone ou online - nossa equipe experiente realiza
+						coleta e análise meticulosas de dados. Desenvolvemos indicadores precisos e análises qualitativas para
+						atender às necessidades específicas de cada cliente.</p>
+					<a href="#" class="cta-btn">Saiba mais</a>
+				</div> -->
 			</div>
 		</section>
 
@@ -72,15 +90,27 @@
 		</section>
 	</main>
 
-	<section class="contact-section">
-		<input type="text" name="first" placeholder="First name" autocomplete="off" required>
-		<input type="text" name="last" placeholder="Last name" autocomplete="off" required>
-		<input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
-		<textarea name="message" cols="60" rows="5" placeholder="Enter text" autocomplete="off" required></textarea>
-		<button type="submit">Send Message</button>
+	<section class="contact-section" id="contato">
+		<form action="https://formspree.io/f/xqkvjjpg" method="post">
+			<h1>Fale conosco</h1>
+			<input type="text" name="name" placeholder="Nome, Empresa..." autocomplete="off" required>
+			<input type="email" name="email" placeholder="Email" autocomplete="off" required>
+			<textarea name="message" cols="60" rows="5" placeholder="Texto para contato..." autocomplete="off" required></textarea>
+			<button type="submit">Enviar</button>
+		</form>
 	</section>
 
-	<footer></footer>
+	<footer>
+		<p>
+			E-mail: instituto.i3p@gmail.com
+			Representantes:
+			Prof. Me. Guilherme de Oliveira: (19) 9 9212-0170
+			Profa. Bruna Valença: (19) 9 9732-3224
+		</p>
+		<p style="font-weight: bold;">
+			Instituto I3P - 2023
+		</p>
+	</footer>
 
 	<script src="script.js"></script>
 </body>

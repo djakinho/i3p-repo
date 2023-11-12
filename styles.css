@@ -12,7 +12,8 @@ body {
 }
 
 header {
-  background-color: rgb(9, 171, 171);
+  /* background-color: rgb(9, 171, 171); */
+  background-color: #219EBC;
 }
 
 main {
@@ -45,7 +46,7 @@ main {
 /* CARD ELEMENTS ============================== */
 
 .cards-container {
-  max-width: 1110px;
+  max-width: 2000px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -138,4 +139,98 @@ Black: #121617
 
 .contact-section {
   padding: 3rem 1rem;
+  background-color: #F9F9FA;
+}
+
+.contact-section h1 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.contact-section input {
+  background-color: #FFFFFF;
+  width: 70%;
+  /* margin-left: 12%; */
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: #121617;
+  margin-bottom: 20px;
+}
+
+.contact-section textarea {
+  background-color: #FFFFFF;
+  width: 70%;
+  /* margin-left: 12%; */
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: #121617;
+  margin-bottom: 25px;
+}
+
+.contact-section input:focus-within {
+  outline: none;
+  border-color: #219EBC;
+  border-width: 3px;
+}
+
+.contact-section textarea:focus-within {
+  outline: none;
+  border-color: #219EBC;
+  border-width: 3px;
+}
+
+.contact-section button {
+  background-color: #219EBC;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  /* padding: 0.5rem 1rem; */
+  padding: 1rem 2rem;
+
+  text-align: center;
+  display: flex;
+  margin: auto;
+  transition: background-color 0.3s;
+
+  font-size: large;
+
+}
+
+.contact-section button:hover {
+  background-color: #40BEDD;
+}
+
+
+.section-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #354144;
+}
+
+.section-header li {
+  float: left;
+}
+
+.section-header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.section-header li a:hover {
+  background-color: #219EBC;
+}
+
+footer {
+  background-color: #354144;
+  color: #F9F9FA;
+  font-size: large;
+  font-weight: 500;
 }
